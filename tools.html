@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Budget Calculator &amp; Pre-Departure Checklist — Al-Maslak al-Muyassar</title>
+<meta name="description" content="A realistic monthly budget for studying in Cairo, with one-time setup costs, plus a printable pre-departure checklist.">
+<meta name="theme-color" content="#1E0D1A">
+<link rel="canonical" href="https://almaslakalmuyasar.com/tools">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Al-Maslak al-Muyassar">
+<meta property="og:title" content="Budget Calculator &amp; Pre-Departure Checklist">
+<meta property="og:description" content="A realistic monthly budget for studying in Cairo, with one-time setup costs, plus a printable pre-departure checklist.">
+<meta property="og:url" content="https://almaslakalmuyasar.com/tools">
+<meta property="og:image" content="https://almaslakalmuyasar.com/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@400;500;600;700&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="shell.css">
+<link rel="stylesheet" href="guide.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div id="sn-mount"></div>
+<svg style="display:none" aria-hidden="true">
+  <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></symbol>
+  <symbol id="i-alert" viewBox="0 0 24 24"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></symbol>
+  <symbol id="i-tip" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 015.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></symbol>
+  <symbol id="i-wifi" viewBox="0 0 24 24"><path d="M5 12.55a11 11 0 0114.08 0"/><path d="M1.42 9a16 16 0 0121.16 0"/><path d="M8.53 16.11a6 6 0 016.95 0"/><circle cx="12" cy="20" r="1" fill="currentColor"/></symbol>
+  <symbol id="i-shop" viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></symbol>
+  <symbol id="i-cart" viewBox="0 0 24 24"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 001.95-1.57l1.65-7.43H6"/></symbol>
+  <symbol id="i-truck" viewBox="0 0 24 24"><rect x="1" y="3" width="15" height="13"/><path d="M16 8h4l3 3v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></symbol>
+  <symbol id="i-car" viewBox="0 0 24 24"><path d="M5 17H3a2 2 0 01-2-2V5a2 2 0 012-2h11l5 5v9a2 2 0 01-2 2h-2"/><circle cx="9" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></symbol>
+  <symbol id="i-bus" viewBox="0 0 24 24"><path d="M8 6v6m8-6v6M2 12h20M4 2h16a2 2 0 012 2v14a2 2 0 01-2 2H4a2 2 0 01-2-2V4a2 2 0 012-2z"/><circle cx="7" cy="20" r="2"/><circle cx="17" cy="20" r="2"/></symbol>
+  <symbol id="i-map" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></symbol>
+  <symbol id="i-volume" viewBox="0 0 24 24"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M19.07 4.93a10 10 0 010 14.14M15.54 8.46a5 5 0 010 7.07"/></symbol>
+  <symbol id="i-layers" viewBox="0 0 24 24"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></symbol>
+  <symbol id="i-bolt" viewBox="0 0 24 24"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></symbol>
+</svg>
+<header class="ph"><div class="ph-in"><div class="ph-eyebrow">Plan ahead</div><h1>Budget &amp; <em>Checklist</em></h1><p class="ph-lead">Estimate what your stay will really cost — monthly and one-off — then tick off everything before you fly.</p></div><div class="ph-ar notranslate" translate="no" lang="ar" aria-hidden="true">خطة</div></header>
+<main id="main">
+<div class="dark-section" id="calculator">
+  <div class="page-wrap">
+    <span class="section-eyebrow">Budget calculator</span>
+    <h2>Budget Calculator</h2>
+    <p>A realistic, Cairo-specific cost estimate — built around how you'll actually live, not a single fixed number. Every figure below can be overridden if you know your own cost.</p>
+
+    <!-- SITUATION -->
+    <div style="margin-bottom:22px">
+      <div class="calc-step-lbl">Your situation</div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px" id="calcPaths">
+        <button onclick="setCalcPath('solo')" id="cp-solo" class="calc-path-btn active" aria-pressed="true">
+          <span class="cp-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></span>
+          <span class="cp-label">Solo Student</span>
+        </button>
+        <button onclick="setCalcPath('family')" id="cp-family" class="calc-path-btn" aria-pressed="false">
+          <span class="cp-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></span>
+          <span class="cp-label">With Family</span>
+        </button>
+      </div>
+
+      <!-- FAMILY SUB-QUESTION -->
+      <div id="familySub" style="display:none;margin-top:12px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);border-radius:var(--radius);padding:14px 16px">
+        <div class="calc-mini-lbl">Do you contribute towards household costs?</div>
+        <div class="seg-row">
+          <div class="seg" role="group" aria-label="Household contribution">
+            <button class="seg-btn active" data-grp="famContrib" data-val="no" onclick="setSeg(this);toggleFamRent()">No — family handles it</button>
+            <button class="seg-btn" data-grp="famContrib" data-val="yes" onclick="setSeg(this);toggleFamRent()">Yes</button>
+          </div>
+        </div>
+        <div id="famRentWrap" style="display:none;margin-top:10px">
+          <label class="calc-field-lbl" for="famRent">Your monthly contribution (EGP)</label>
+          <input type="number" id="famRent" min="0" step="100" placeholder="e.g. 3000" oninput="updateCalc()" class="calc-num-input">
+        </div>
+      </div>
+    </div>
+
+    <!-- CURRENCY -->
+    <div class="calc-field" style="max-width:320px;margin-bottom:22px">
+      <label for="calcCur">Show prices in</label>
+      <select id="calcCur" onchange="updateCalc()" aria-label="Select currency">
+        <option value="EGP" selected>Egyptian Pound (EGP)</option>
+        <option value="GBP">British Pound (£)</option>
+        <option value="USD">US Dollar ($)</option>
+        <option value="EUR">Euro (€)</option>
+        <option value="AUD">Australian Dollar (A$)</option>
+        <option value="CAD">Canadian Dollar (C$)</option>
+        <option value="NOK">Norwegian Krone (kr)</option>
+        <option value="SAR">Saudi Riyal</option>
+      </select>
+    </div>
+
+    <div class="calc-layout">
+      <div class="calc-controls">
+
+        <!-- ACCOMMODATION (solo only) -->
+        <div id="accomBlock">
+          <div class="calc-field">
+            <label for="area">Area</label>
+            <select id="area" onchange="updateCalc()">
+              <option value="nasrcity">Nasr City (Districts 8–10)</option>
+              <option value="gardenia">Gardenia City Compound</option>
+              <option value="rehab">Rehab City</option>
+              <option value="newcairo">New Cairo / Tagammou</option>
+            </select>
+          </div>
+          <div class="calc-field">
+            <label for="sharing">Sharing?</label>
+            <select id="sharing" onchange="updateCalc()">
+              <option value="shared">Yes — sharing with flatmates</option>
+              <option value="private">No — private room/studio</option>
+            </select>
+          </div>
+          <div class="calc-override">
+            <label class="calc-check"><input type="checkbox" id="rentOverrideOn" onchange="updateCalc()"> I found an apartment / know my rent</label>
+            <input type="number" id="rentOverride" min="0" step="100" placeholder="EGP / month" oninput="updateCalc()" class="calc-num-input" style="display:none">
+          </div>
+        </div>
+
+        <!-- FOOD -->
+        <div class="calc-field">
+          <label for="food">Food</label>
+          <select id="food" onchange="updateCalc()">
+            <option value="cook">Very budget-conscious — mostly cook</option>
+            <option value="balanced" selected>Balanced — cook + eat out</option>
+            <option value="eatout">Eat out regularly</option>
+          </select>
+        </div>
+
+        <!-- TRANSPORT -->
+        <div class="calc-field">
+          <label for="transport">Transport</label>
+          <select id="transport" onchange="updateCalc()">
+            <option value="walk">Mostly walk</option>
+            <option value="public" selected>Mostly public transport</option>
+            <option value="mixed">Public transport + occasional Uber/Careem</option>
+            <option value="taxi">Frequent taxis / Uber / Careem</option>
+          </select>
+        </div>
+
+        <!-- ARABIC STUDY -->
+        <div class="calc-field">
+          <label for="arabicInst">Arabic institute</label>
+          <select id="arabicInst" onchange="updateCalc()">
+            <option value="none">Not currently studying Arabic</option>
+            <option value="ibaanah">Al-Ibānah — ~9,800 EGP/level</option>
+            <option value="fajr" selected>Fajr Centre — ~4,460 EGP/level</option>
+            <option value="raseel">Raseel — ~2,500 EGP/level</option>
+            <option value="furqan">Markaz Furqān — ~3,000 EGP/level</option>
+            <option value="lisan">Lisān al-ʿArab — ~4,500 EGP/level</option>
+            <option value="fusha">Al-Fusha — ~2,500 EGP/level</option>
+            <option value="diya">Markaz Ḍiyā — ~2,800 EGP/level</option>
+            <option value="darhafsah">Dār Ḥafṣah (sisters) — ~2,450 EGP/level</option>
+            <option value="private">Private Arabic tutor</option>
+            <option value="self">Mostly self-study</option>
+          </select>
+          <div class="calc-override">
+            <label class="calc-check"><input type="checkbox" id="arabicOverrideOn" onchange="updateCalc()"> I know my actual cost</label>
+            <input type="number" id="arabicOverride" min="0" step="50" placeholder="EGP / month" oninput="updateCalc()" class="calc-num-input" style="display:none">
+          </div>
+        </div>
+
+        <!-- QURAN STUDY -->
+        <div class="calc-field">
+          <label for="quranStudy">Qurʾān study</label>
+          <select id="quranStudy" onchange="updateCalc()">
+            <option value="none" selected>Not studying Qurʾān right now</option>
+            <option value="institute">Qurʾān institute (~2,500 EGP/month)</option>
+            <option value="private">Private Qurʾān teacher</option>
+          </select>
+          <div class="calc-override">
+            <label class="calc-check"><input type="checkbox" id="quranOverrideOn" onchange="updateCalc()"> I know my actual cost</label>
+            <input type="number" id="quranOverride" min="0" step="50" placeholder="EGP / month" oninput="updateCalc()" class="calc-num-input" style="display:none">
+          </div>
+          <p class="calc-note" id="quranPrivateNote" style="display:none;margin-top:6px">Based on ~2 hours/week at £3–6/hour. This varies a lot by teacher — override above once you have an arrangement.</p>
+        </div>
+
+        <!-- DURATION -->
+        <div class="calc-field">
+          <label for="dur">Duration of stay</label>
+          <input type="range" id="dur" min="1" max="12" value="3" aria-valuemin="1" aria-valuemax="12" aria-valuenow="3"
+            oninput="updateCalc();document.getElementById('durLbl').textContent=this.value+' month'+(+this.value>1?'s':'');this.setAttribute('aria-valuenow',this.value)">
+          <div class="range-row"><span>1 month</span><span id="durLbl">3 months</span><span>12 months</span></div>
+        </div>
+
+        <!-- FINE-TUNE (progressive disclosure) -->
+        <button class="calc-finetune-toggle" onclick="toggleFinetune()" id="finetuneBtn" aria-expanded="false">
+          <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          Fine-tune my estimate
+        </button>
+        <div id="finetuneBox" style="display:none">
+          <div class="calc-field">
+            <label for="social">Social &amp; leisure</label>
+            <select id="social" onchange="updateCalc()">
+              <option value="low">Low</option>
+              <option value="moderate" selected>Moderate</option>
+              <option value="high">High</option>
+            </select>
+          </div>
+          <div class="calc-field">
+            <label for="mobileOverride">Mobile &amp; internet (EGP/month)</label>
+            <input type="number" id="mobileOverride" min="0" step="50" placeholder="Default ~400" oninput="updateCalc()" class="calc-num-input">
+          </div>
+          <div class="calc-field">
+            <label for="personalOverride">Personal &amp; household (EGP/month)</label>
+            <input type="number" id="personalOverride" min="0" step="50" placeholder="Default ~1,000" oninput="updateCalc()" class="calc-num-input">
+          </div>
+          <label class="calc-check" style="margin-top:2px"><input type="checkbox" id="includeSetup" checked onchange="updateCalc()"> Include one-time setup costs</label>
+        </div>
+
+        <!-- PATH ADVICE -->
+        <div style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:var(--radius);padding:14px 16px;margin-top:16px">
+          <div style="font-size:.65rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);margin-bottom:7px" id="pathAdviceTitle">Solo Student</div>
+          <p style="font-size:.82rem;color:#A594AB;margin:0;line-height:1.65" id="pathAdviceText">Adjust the fields above — the estimate updates instantly. All figures are editable if you already know your actual costs.</p>
+        </div>
+      </div>
+
+      <div class="calc-result" aria-live="polite">
+        <span class="calc-result-eyebrow">Estimated Monthly Budget</span>
+
+        <!-- TIER PICKER -->
+        <div class="tier-row" role="group" aria-label="Budget tier">
+          <button class="tier-btn" data-tier="budget" onclick="setTier(this)">Budget</button>
+          <button class="tier-btn active" data-tier="recommended" onclick="setTier(this)">Recommended</button>
+          <button class="tier-btn" data-tier="comfortable" onclick="setTier(this)">Comfortable</button>
+        </div>
+
+        <div class="total-val" id="r-monthly">—</div>
+        <div class="calc-sub-totals">
+          <span id="r-weekly">—</span> / week &nbsp;·&nbsp; <span id="r-daily">—</span> / day
+        </div>
+
+        <button class="calc-breakdown-toggle" onclick="toggleBreakdown()" id="breakdownBtn" aria-expanded="false">
+          View full breakdown
+          <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+
+        <div id="breakdownBox" style="display:none;margin-top:6px">
+          <div class="calc-row"><span class="c-lbl">🏠 Housing</span><span class="c-amt" id="r-accom">—</span></div>
+          <div class="calc-row"><span class="c-lbl">🍲 Food</span><span class="c-amt" id="r-food">—</span></div>
+          <div class="calc-row"><span class="c-lbl">🚇 Transport</span><span class="c-amt" id="r-transport">—</span></div>
+          <div class="calc-row"><span class="c-lbl">📱 Phone &amp; internet</span><span class="c-amt" id="r-mobile">—</span></div>
+          <div class="calc-row"><span class="c-lbl">📖 Arabic study</span><span class="c-amt" id="r-arabic">—</span></div>
+          <div class="calc-row"><span class="c-lbl">📗 Qurʾān study</span><span class="c-amt" id="r-quran">—</span></div>
+          <div class="calc-row"><span class="c-lbl">🧴 Personal &amp; household</span><span class="c-amt" id="r-personal">—</span></div>
+          <div class="calc-row"><span class="c-lbl">☕ Social &amp; leisure</span><span class="c-amt" id="r-social">—</span></div>
+          <div class="calc-row"><span class="c-lbl">🛟 Buffer / miscellaneous</span><span class="c-amt" id="r-buffer">—</span></div>
+        </div>
+
+        <div class="calc-totals">
+          <div class="total-label">Total for your stay (<span id="r-durLbl">3 months</span>)</div>
+          <div class="total-val" style="font-size:1.6rem" id="r-total">—</div>
+        </div>
+
+        <div id="setupBox" class="calc-setup-box">
+          <div class="total-label">Estimated one-time setup cost</div>
+          <div class="total-val" style="font-size:1.4rem" id="r-setup">—</div>
+          <p class="calc-note" style="margin-top:4px">Deposit, first month's rent, SIM, bedding, kitchen basics, initial groceries and arrival costs — paid once, not monthly.</p>
+        </div>
+
+        <p class="calc-note">These figures are estimates for Cairo (Nasr City and family compounds) based on typical student living patterns, and can vary by accommodation, institute and lifestyle. Use the overrides above for a more accurate personal figure.</p>
+      </div>
+    </div>
+  </div>
+</div><div class="cl-section" id="checklist" style="scroll-margin-top:76px">
+  <div class="page-wrap">
+    <h2>Pre-Departure Checklist</h2>
+    <p>Tick each item as you complete it. Print it if you want a physical copy.</p>
+    <button class="print-btn" onclick="window.print()">Print checklist</button>
+    <div class="progress-wrap" role="progressbar" aria-label="Checklist completion">
+      <div class="progress-track"><div class="progress-fill" id="pFill" style="width:0%"></div></div>
+      <div class="progress-label"><span id="pDone">0</span> / <span id="pTotal">0</span> complete</div>
+    </div>
+    <div class="cl-cat"><div class="cl-cat-head">Documents</div>
+      <div class="cl-item"><input type="checkbox" id="c1" onchange="updateProgress()"><label for="c1">Passport valid for at least 6 months beyond your planned stay</label></div>
+      <div class="cl-item"><input type="checkbox" id="c2" onchange="updateProgress()"><label for="c2">Passport photos: at least 6 printed copies (visa renewal + institutes)</label></div>
+      <div class="cl-item"><input type="checkbox" id="c3" onchange="updateProgress()"><label for="c3">Photocopies of passport main page: at least 5 copies</label></div>
+      <div class="cl-item"><input type="checkbox" id="c4" onchange="updateProgress()"><label for="c4">E-visa downloaded and saved offline (if using)</label></div>
+      <div class="cl-item"><input type="checkbox" id="c5" onchange="updateProgress()"><label for="c5">Emergency contacts set up: someone in Egypt + someone at home with each other's details</label></div>
+      <div class="cl-item"><input type="checkbox" id="c6" onchange="updateProgress()"><label for="c6">Copies of passport and visa sent to trusted contacts in Egypt and at home</label></div>
+    </div>
+    <div class="cl-cat"><div class="cl-cat-head">Finance</div>
+      <div class="cl-item"><input type="checkbox" id="c7" onchange="updateProgress()"><label for="c7">Starling or Revolut card set up — apply before travel, delivery takes time</label></div>
+      <div class="cl-item"><input type="checkbox" id="c8" onchange="updateProgress()"><label for="c8">Backup bank card in case first card is swallowed by an ATM</label></div>
+      <div class="cl-item"><input type="checkbox" id="c9" onchange="updateProgress()"><label for="c9">$200+ USD cash for visa renewal — bring from home, hard to obtain in Egypt</label></div>
+      <div class="cl-item"><input type="checkbox" id="c10" onchange="updateProgress()"><label for="c10">$30 USD cash for on-arrival visa — do not rely on airport ATMs</label></div>
+      <div class="cl-item"><input type="checkbox" id="c11" onchange="updateProgress()"><label for="c11">Budget plan covering: accommodation, tuition, food, transport, visas, contingency</label></div>
+    </div>
+    <div class="cl-cat"><div class="cl-cat-head">Accommodation</div>
+      <div class="cl-item"><input type="checkbox" id="c12" onchange="updateProgress()"><label for="c12">Short-term accommodation booked for first 3–5 nights in Nasr City</label></div>
+      <div class="cl-item"><input type="checkbox" id="c13" onchange="updateProgress()"><label for="c13">Asked in student WhatsApp/Telegram groups for accommodation recommendations</label></div>
+      <div class="cl-item"><input type="checkbox" id="c14" onchange="updateProgress()"><label for="c14">Egyptian address arranged — required for visa renewal</label></div>
+    </div>
+    <div class="cl-cat"><div class="cl-cat-head">Study Preparation</div>
+      <div class="cl-item"><input type="checkbox" id="c15" onchange="updateProgress()"><label for="c15">Completed at least Madinah Book 1 or Bayna Yadayk Level 1 (strongly recommended before Ibānah)</label></div>
+      <div class="cl-item"><input type="checkbox" id="c16" onchange="updateProgress()"><label for="c16">Researched which markaz aligns with your goals</label></div>
+      <div class="cl-item"><input type="checkbox" id="c17" onchange="updateProgress()"><label for="c17">Connected with at least one student currently in or recently returned from Cairo</label></div>
+      <div class="cl-item"><input type="checkbox" id="c18" onchange="updateProgress()"><label for="c18">Joined the Brothers Egypt Support Group (WhatsApp link in Community section)</label></div>
+    </div>
+    <div class="cl-cat"><div class="cl-cat-head">Tech &amp; Gear</div>
+      <div class="cl-item"><input type="checkbox" id="c19" onchange="updateProgress()"><label for="c19">Unlocked phone that can accept an Egyptian SIM</label></div>
+      <div class="cl-item"><input type="checkbox" id="c20" onchange="updateProgress()"><label for="c20">European 2-pin plug adapter</label></div>
+      <div class="cl-item"><input type="checkbox" id="c21" onchange="updateProgress()"><label for="c21">Power bank</label></div>
+      <div class="cl-item"><input type="checkbox" id="c22" onchange="updateProgress()"><label for="c22">Uber, InDrive, Google Maps installed and set up before arrival</label></div>
+      <div class="cl-item"><input type="checkbox" id="c23" onchange="updateProgress()"><label for="c23">Ṭalabāt app downloaded</label></div>
+    </div>
+    <div class="cl-cat"><div class="cl-cat-head">Clothing &amp; Personal</div>
+      <div class="cl-item"><input type="checkbox" id="c24" onchange="updateProgress()"><label for="c24">Modest clothing — thobes respected, casual trousers/shirts for everyday</label></div>
+      <div class="cl-item"><input type="checkbox" id="c25" onchange="updateProgress()"><label for="c25">Sandals</label></div>
+      <div class="cl-item"><input type="checkbox" id="c26" onchange="updateProgress()"><label for="c26">Any personal medications — sufficient supply for your stay</label></div>
+      <div class="cl-item"><input type="checkbox" id="c27" onchange="updateProgress()"><label for="c27">Travel insurance covering Egypt for your full intended duration</label></div>
+    </div>
+  </div>
+</div><div class="page-wrap"><nav class="pn" aria-label="Continue through the guide"><a class="pv" href="safety.html"><small>← Previous</small><b>Safety</b></a><a class="nx" href="faq.html"><small>Next →</small><b>FAQ</b></a></nav><aside class="cta-band"><div><h3>Want a second opinion on your budget?</h3><p>On a guidance call we go through your plan line by line and tell you where the real costs will fall.</p></div><a class="btn btn-mint" href="services.html?service=essential#enquire">Book a guidance call →</a></aside></div><div style="height:56px"></div>
+</main>
+<div id="sf-mount"></div>
+<noscript><nav style="padding:14px 20px;background:#1E0D1A;font:600 14px Inter,sans-serif"><a style="color:#DCE8DB;margin-right:16px" href="/">Home</a><a style="color:#DCE8DB;margin-right:16px" href="visa.html">Visa</a><a style="color:#DCE8DB;margin-right:16px" href="housing.html">Housing</a><a style="color:#DCE8DB;margin-right:16px" href="institutes.html">Institutes</a><a style="color:#DCE8DB;margin-right:16px" href="tools.html">Tools</a><a style="color:#DCE8DB;margin-right:16px" href="faq.html">FAQ</a><a style="color:#DCE8DB;margin-right:16px" href="community.html">Community</a><a style="color:#DCE8DB" href="services.html">Services</a></nav></noscript>
+<script src="shell.js"></script>
+<script src="calculator.js"></script>
+</body>
+</html>

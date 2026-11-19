@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://almaslakalmuyasar.com/sitemap.xml

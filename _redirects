@@ -1,0 +1,6 @@
+# Old addresses from the temporary test site now point to the new pages
+/homepage.html       /              301
+/egypt-guide.html    /              301
+/egypt-guide         /              301
+/housing-guide.html  /housing       301
+/housing-guide       /housing       301
